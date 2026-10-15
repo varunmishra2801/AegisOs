@@ -118,7 +118,7 @@ jobs:
         working-directory: terraform
     steps:
       - uses: actions/checkout@v4
-      - uses: hashicorp/setup-terraform@v3
+      - uses: hashicorp/setup-terraform@v4
       - name: Format check
         run: terraform fmt -check -recursive || true
       - name: Init
